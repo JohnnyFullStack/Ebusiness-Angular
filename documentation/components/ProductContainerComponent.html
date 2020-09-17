@@ -1,0 +1,946 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>pinduoduo documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">pinduoduo documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ProductContainerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/product/components/product-container/product-container.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-product-container</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./product-container.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./product-container.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#selectedIndex">selectedIndex</a>
+                            </li>
+                            <li>
+                                <a href="#subs">subs</a>
+                            </li>
+                            <li>
+                                <a href="#variants$">variants$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#handleDirectBuy">handleDirectBuy</a>
+                            </li>
+                            <li>
+                                <a href="#handleGroupBuy">handleGroupBuy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, orderService: <a href="../injectables/OrderService.html">OrderService</a>, dialogService: <a href="../injectables/DialogService.html">DialogService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>orderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OrderService.html" target="_self" >OrderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleDirectBuy"></a>
+                    <span class="name">
+                        <b>
+                            handleDirectBuy
+                        </b>
+                        <a href="#handleDirectBuy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleDirectBuy(variants: ProductVariant[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>variants</td>
+                                    <td>
+                                            <code>ProductVariant[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleGroupBuy"></a>
+                    <span class="name">
+                        <b>
+                            handleGroupBuy
+                        </b>
+                        <a href="#handleGroupBuy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleGroupBuy(variants: ProductVariant[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>variants</td>
+                                    <td>
+                                            <code>ProductVariant[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedIndex"></a>
+                        <span class="name">
+                            <b>
+                            selectedIndex</b>
+                            <a href="#selectedIndex"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subs"></a>
+                        <span class="name">
+                            <b>
+                            subs</b>
+                            <a href="#subs"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subscription[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="variants$"></a>
+                        <span class="name">
+                            <b>
+                            variants$</b>
+                            <a href="#variants$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;ProductVariant[]&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/product/components/product-container/product-container.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  EventEmitter,
+  OnDestroy
+} from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { Observable, Subscription } from &#x27;rxjs&#x27;;
+import { filter, map, switchMap } from &#x27;rxjs/operators&#x27;;
+import { ProductVariant } from &#x27;../../domain&#x27;;
+import { OrderService } from &#x27;../../services&#x27;;
+import { DialogService } from &#x27;src/app/dialog&#x27;;
+import { ProductVariantDialogComponent } from &#x27;../../../shared/components/product-variant-dialog&#x27;;
+
+@Component({
+  selector: &#x27;app-product-container&#x27;,
+  templateUrl: &#x27;./product-container.component.html&#x27;,
+  styleUrls: [&#x27;./product-container.component.css&#x27;],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class ProductContainerComponent implements OnInit, OnDestroy {
+  variants$: Observable&lt;ProductVariant[]&gt;;
+  selectedIndex &#x3D; 0;
+  subs: Subscription[] &#x3D; [];
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private orderService: OrderService,
+    private dialogService: DialogService
+  ) {}
+
+  ngOnInit() {
+    const productId$ &#x3D; this.route.paramMap.pipe(
+      filter(params &#x3D;&gt; params.has(&#x27;productId&#x27;)),
+      map(params &#x3D;&gt; params.get(&#x27;productId&#x27;))
+    );
+    this.variants$ &#x3D; productId$.pipe(
+      switchMap(productId &#x3D;&gt;
+        this.orderService.getProductVariantsByProductId(productId)
+      )
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subs.forEach(sub &#x3D;&gt; sub.unsubscribe());
+    this.subs &#x3D; [];
+  }
+
+  handleDirectBuy(variants: ProductVariant[]) {}
+
+  handleGroupBuy(variants: ProductVariant[]) {
+    const top &#x3D; 40;
+    // 传入 Output，EventEmitter 其实就是一个 Subject
+    const formSubmitted &#x3D; new EventEmitter();
+    this.subs.push(
+      formSubmitted.subscribe(ev &#x3D;&gt; {
+        this.dialogService.saveData(ev);
+        this.router.navigate([&#x27;/orders&#x27;, &#x27;confirm&#x27;]);
+      })
+    );
+    const selected &#x3D; new EventEmitter&lt;number&gt;();
+    this.subs.push(
+      selected.subscribe(idx &#x3D;&gt; {
+        console.log(idx);
+        this.selectedIndex &#x3D; idx;
+      })
+    );
+    this.dialogService.open(ProductVariantDialogComponent, {
+      // 如果 key 和 value 是一个名字，直接写就可以
+      inputs: {
+        variants,
+        selectedVariantIndex: this.selectedIndex
+      },
+      outputs: { formSubmitted, selected },
+      position: {
+        top: &#x60;${top}%&#x60;,
+        left: &#x27;50%&#x27;,
+        width: &#x27;100%&#x27;,
+        height: &#x60;${100 - top}%&#x60;
+      }
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-back-button&gt;&lt;/app-back-button&gt;
+&lt;ng-container *ngIf&#x3D;&quot;variants$ | async as productVariants&quot;&gt;
+  &lt;app-image-slider
+    [sliders]&#x3D;&quot;productVariants[selectedIndex].productVariantImages&quot;
+    [sliderHeight]&#x3D;&quot;&#x27;22rem&#x27;&quot;
+    [intervalBySeconds]&#x3D;&quot;0&quot;
+  &gt;
+  &lt;/app-image-slider&gt;
+  &lt;div class&#x3D;&quot;price-section&quot;&gt;
+    &lt;div class&#x3D;&quot;now-price&quot;&gt;
+      {{ productVariants[selectedIndex].price | currency: &#x27;CNY&#x27; }}
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;list-price&quot;&gt;
+      {{ productVariants[selectedIndex].listPrice | currency: &#x27;CNY&#x27; }}
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;sales-count&quot;&gt;
+      {{ productVariants[selectedIndex].product.priceDesc }}
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;title&quot;&gt;
+      {{ productVariants[selectedIndex].name }}
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;coupon&quot;&gt;
+      &lt;span
+        appTag
+        [tagRadius]&#x3D;&quot;&#x27;5px&#x27;&quot;
+        [tagPadding]&#x3D;&quot;&#x27;2px 10px&#x27;&quot;
+        [tagSize]&#x3D;&quot;&#x27;1rem&#x27;&quot;
+        [tagBgColor]&#x3D;&quot;&#x27;#e02f29&#x27;&quot;
+        [tagColor]&#x3D;&quot;&#x27;#fff&#x27;&quot;
+        &gt;返现&lt;/span
+      &gt;
+      &lt;span class&#x3D;&quot;desc&quot;&gt;店铺内消费满39元返2元&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;guarantee&quot;&gt;
+      &lt;span&gt;全场包邮&lt;/span&gt;
+      &lt;span&gt;•&lt;/span&gt;
+      &lt;span&gt;7天退换&lt;/span&gt;
+      &lt;span&gt;•&lt;/span&gt;
+      &lt;span&gt;48小时发货&lt;/span&gt;
+      &lt;span&gt;•&lt;/span&gt;
+      &lt;span&gt;假一赔十&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;app-group-short-list class&#x3D;&quot;group-short-list&quot;&gt;&lt;/app-group-short-list&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;toolbar&quot;&gt;
+    &lt;div class&#x3D;&quot;icon-button&quot;&gt;
+      &lt;img src&#x3D;&quot;/assets/icons/more.png&quot; alt&#x3D;&quot;&quot; /&gt;
+      &lt;div&gt;更多&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;icon-button&quot;&gt;
+      &lt;img src&#x3D;&quot;/assets/icons/favorite.png&quot; alt&#x3D;&quot;&quot; /&gt;
+      &lt;div&gt;收藏&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;icon-button&quot;&gt;
+      &lt;img src&#x3D;&quot;/assets/icons/customer-service.png&quot; alt&#x3D;&quot;&quot; /&gt;
+      &lt;div&gt;客服&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;direct-buy&quot; (click)&#x3D;&quot;handleDirectBuy(productVariants)&quot;&gt;
+      &lt;div&gt;
+        {{ productVariants[selectedIndex].listPrice | currency: &#x27;CNY&#x27; }}
+      &lt;/div&gt;
+      &lt;div&gt;直接购买&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;group-buy&quot; (click)&#x3D;&quot;handleGroupBuy(productVariants)&quot;&gt;
+      &lt;div&gt;{{ productVariants[selectedIndex].price | currency: &#x27;CNY&#x27; }}&lt;/div&gt;
+      &lt;div&gt;发起拼单&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/ng-container&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./product-container.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:host {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+  overflow-y: auto;
+}
+app-back-button {
+  position: fixed;
+  left: 1rem;
+  top: 1.2rem;
+  z-index: 2000;
+}
+.price-section {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 1fr;
+  place-content: start;
+  place-items: baseline;
+  grid-gap: 3px;
+  margin: 0 5px;
+}
+.title,
+.coupon,
+.guarantee,
+.group-short-list {
+  grid-column: 1/4;
+}
+.price-section .now-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e02f29;
+}
+.price-section .list-price {
+  color: #3f3f3f;
+  text-decoration: line-through;
+}
+.price-section .sales-count {
+  justify-self: end;
+}
+.price-section .title {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+.price-section .desc {
+  margin-left: 10px;
+  color: #3f3f3f;
+}
+.price-section .guarantee {
+  margin: 5px 0;
+  color: darkgrey;
+  font-size: 1.1rem;
+}
+.group-short-list {
+  width: 100%;
+  padding: 0.4rem 0;
+  background-color: #f5f5f5;
+}
+.toolbar {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-button img {
+  width: 2rem;
+  height: 2rem;
+}
+.toolbar .icon-button {
+  font-size: 0.8rem;
+  color: #3f3f3f;
+  flex: 1 1 10%;
+}
+.toolbar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.toolbar .direct-buy {
+  background: #e9aeaa;
+  color: #fff;
+  flex: 1 1 28%;
+}
+.toolbar .group-buy {
+  background: #e02f29;
+  color: #fff;
+  flex: 1 1 35%;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-back-button></app-back-button><ng-container *ngIf="variants$ | async as productVariants">  <app-image-slider    [sliders]="productVariants[selectedIndex].productVariantImages"    [sliderHeight]="\'22rem\'"    [intervalBySeconds]="0"  >  </app-image-slider>  <div class="price-section">    <div class="now-price">      {{ productVariants[selectedIndex].price | currency: \'CNY\' }}    </div>    <div class="list-price">      {{ productVariants[selectedIndex].listPrice | currency: \'CNY\' }}    </div>    <div class="sales-count">      {{ productVariants[selectedIndex].product.priceDesc }}    </div>    <div class="title">      {{ productVariants[selectedIndex].name }}    </div>    <div class="coupon">      <span        appTag        [tagRadius]="\'5px\'"        [tagPadding]="\'2px 10px\'"        [tagSize]="\'1rem\'"        [tagBgColor]="\'#e02f29\'"        [tagColor]="\'#fff\'"        >返现</span      >      <span class="desc">店铺内消费满39元返2元</span>    </div>    <div class="guarantee">      <span>全场包邮</span>      <span>•</span>      <span>7天退换</span>      <span>•</span>      <span>48小时发货</span>      <span>•</span>      <span>假一赔十</span>    </div>    <app-group-short-list class="group-short-list"></app-group-short-list>  </div>  <div class="toolbar">    <div class="icon-button">      <img src="/assets/icons/more.png" alt="" />      <div>更多</div>    </div>    <div class="icon-button">      <img src="/assets/icons/favorite.png" alt="" />      <div>收藏</div>    </div>    <div class="icon-button">      <img src="/assets/icons/customer-service.png" alt="" />      <div>客服</div>    </div>    <div class="direct-buy" (click)="handleDirectBuy(productVariants)">      <div>        {{ productVariants[selectedIndex].listPrice | currency: \'CNY\' }}      </div>      <div>直接购买</div>    </div>    <div class="group-buy" (click)="handleGroupBuy(productVariants)">      <div>{{ productVariants[selectedIndex].price | currency: \'CNY\' }}</div>      <div>发起拼单</div>    </div>  </div></ng-container></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'CategoryContainerComponent', 'selector': 'app-category-container'},{'name': 'ChatContainerComponent', 'selector': 'app-chat-container'},{'name': 'ConfirmOrderComponent', 'selector': 'app-confirm-order'},{'name': 'CountDownComponent', 'selector': 'app-count-down'},{'name': 'DialogComponent', 'selector': 'app-dialog'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'GroupItemComponent', 'selector': 'app-group-item'},{'name': 'GroupShortListComponent', 'selector': 'app-group-short-list'},{'name': 'HomeContainerComponent', 'selector': 'app-home-container'},{'name': 'HomeDetailComponent', 'selector': 'app-home-detail'},{'name': 'HorizontalGridComponent', 'selector': 'app-horizontal-grid'},{'name': 'ImageSliderComponent', 'selector': 'app-image-slider'},{'name': 'MyContainerComponent', 'selector': 'app-my-container'},{'name': 'PaymentComponent', 'selector': 'app-payment'},{'name': 'ProductAmountComponent', 'selector': 'app-product-amount'},{'name': 'ProductCardComponent', 'selector': 'app-product-card'},{'name': 'ProductContainerComponent', 'selector': 'app-product-container'},{'name': 'ProductTileComponent', 'selector': 'app-product-tile'},{'name': 'ProductVariantDialogComponent', 'selector': 'app-product-variant-dialog'},{'name': 'RecommendContainerComponent', 'selector': 'app-recommend-container'},{'name': 'ScrollableTabComponent', 'selector': 'app-scrollable-tab'},{'name': 'VerticalGridComponent', 'selector': 'app-vertical-grid'}];
+    var DIRECTIVES = [{'name': 'AvatarDirective', 'selector': '[appAvatar]'},{'name': 'CloseDialogDirective', 'selector': '[appCloseDialog]'},{'name': 'GridItemDirective', 'selector': '[appGridItem]'},{'name': 'GridItemImageDirective', 'selector': '[appGridItemImage]'},{'name': 'GridItemTitleDirective', 'selector': '[appGridItemTitle]'},{'name': 'TagDirective', 'selector': '[appTag]'}];
+    var ACTUAL_COMPONENT = {'name': 'ProductContainerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProductContainerComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
